@@ -1,0 +1,24 @@
+//
+//  PhotoCollectionViewCell.m
+//  Cats
+//
+//  Created by Javier Xing on 2017-11-20.
+//  Copyright © 2017 Javier Xing. All rights reserved.
+//
+
+#import "PhotoCollectionViewCell.h"
+
+@implementation PhotoCollectionViewCell
+
+-(void)setCellImage:(NSURL*)imageURL{
+    NSURLSessionTask *task = [[NSURLSession sharedSession] dataTaskWithURL:imageURL completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+        UIImage *image = [UIImage imageWithData:data];
+        
+        [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+            self.photoImage.image = image;
+        }];
+    }];
+    [task resume];
+}
+
+@end
