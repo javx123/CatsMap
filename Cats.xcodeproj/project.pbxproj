@@ -17,6 +17,7 @@
 		2D7A1B191FC3916D007DE21F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7A1B181FC3916D007DE21F /* main.m */; };
 		2D7A1B211FC3994B007DE21F /* Photos.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7A1B201FC3994B007DE21F /* Photos.m */; };
 		2D7A1B271FC3A87B007DE21F /* PhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7A1B261FC3A87B007DE21F /* PhotoCollectionViewCell.m */; };
+		2D89B6821FC89902000D093E /* Cats.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 2D89B6811FC89902000D093E /* Cats.xcdatamodel */; };
 		2DA28EAA1FC3B2D4001F26F6 /* FlikrAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DA28EA91FC3B2D4001F26F6 /* FlikrAPI.m */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,7 @@
 		2D7A1B201FC3994B007DE21F /* Photos.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Photos.m; sourceTree = "<group>"; };
 		2D7A1B251FC3A87B007DE21F /* PhotoCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoCollectionViewCell.h; sourceTree = "<group>"; };
 		2D7A1B261FC3A87B007DE21F /* PhotoCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoCollectionViewCell.m; sourceTree = "<group>"; };
+		2D89B6811FC89902000D093E /* Cats.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Cats.xcdatamodel; sourceTree = "<group>"; };
 		2DA28EA81FC3B2D4001F26F6 /* FlikrAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlikrAPI.h; sourceTree = "<group>"; };
 		2DA28EA91FC3B2D4001F26F6 /* FlikrAPI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlikrAPI.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -92,6 +94,7 @@
 				2D7A1B141FC3916D007DE21F /* LaunchScreen.storyboard */,
 				2D7A1B171FC3916D007DE21F /* Info.plist */,
 				2D7A1B181FC3916D007DE21F /* main.m */,
+				2D89B6811FC89902000D093E /* Cats.xcdatamodel */,
 			);
 			path = Cats;
 			sourceTree = "<group>";
@@ -174,6 +177,7 @@
 				2D7A1B271FC3A87B007DE21F /* PhotoCollectionViewCell.m in Sources */,
 				2D7A1B0B1FC3916D007DE21F /* AppDelegate.m in Sources */,
 				2D02AC481FC506DC00561A53 /* SearchViewController.m in Sources */,
+				2D89B6821FC89902000D093E /* Cats.xcdatamodel in Sources */,
 				2D02AC451FC4F3A500561A53 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
