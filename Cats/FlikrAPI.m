@@ -11,7 +11,7 @@
 @implementation FlikrAPI
 
 + (void)searchFor:(NSString*)tag complete:(void (^)(NSArray *results))done{
-    NSURL *flikrUrl = [NSURL URLWithString:[NSString stringWithFormat:@"https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=549cb973d6beee15fc4157a6941d17ae&tags=%@&has_geo=1&extras=url_m&format=json&nojsoncallback=1", tag]];
+    NSURL *flikrUrl = [NSURL URLWithString:[NSString stringWithFormat:@"https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=549cb973d6beee15fc4157a6941d17ae&tags=%@&has_geo=1&extras=url_m%%2C+url_sq&format=json&nojsoncallback=1", tag]];
     NSURLRequest *request = [[NSURLRequest alloc]initWithURL: flikrUrl];
     
     NSURLSessionTask *task= [[NSURLSession sharedSession] dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {

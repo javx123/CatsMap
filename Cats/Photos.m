@@ -17,13 +17,18 @@
         _photoId = info[@"id"];
         _photoTitle = info[@"title"];
         _photoURL = [NSURL URLWithString:info[@"url_m"]];
+        _smallPhotoURL = [NSURL URLWithString:info[@"url_sq"]];
+        
     }
     return self;
 }
 
 -(UIImage *)photoImage{
-    self.photoImage = [UIImage imageWithData:[NSData dataWithContentsOfURL:self.photoURL]];
-    return self.photoImage;
+    if (_photoImage) {
+        return _photoImage;
+    }
+    _photoImage = [UIImage imageWithData:[NSData dataWithContentsOfURL:self.photoURL]];
+    return _photoImage;
 }
 
 -(NSString *)title{

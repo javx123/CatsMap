@@ -17,6 +17,7 @@
 @property (nonatomic,strong) NSString *photoTitle;
 @property (nonatomic, assign)CLLocationCoordinate2D coordinate;
 
+@property (nonatomic, strong) NSURL *smallPhotoURL;
 
 - (instancetype)initWithInfo:(NSDictionary*)info;
 //-(void)photoImageURL;
